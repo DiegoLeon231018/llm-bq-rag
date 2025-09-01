@@ -1,0 +1,60 @@
+# ── Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.env
+.env.*
+.venv/
+venv/
+pip-wheel-metadata/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs y basura temporal
+*.log
+logs/
+tmp/
+.DS_Store
+Thumbs.db
+
+# IDEs/editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Node (por si mezclas frontend)
+node_modules/
+dist/
+build/
+
+# Datos locales que NO van al repo
+data/raw/
+data/tmp/
+*.csv
+*.tsv
+*.parquet
+*.xlsx
+*.xls
+*.sav
+*.zip
+*.7z
+
+# GCP / credenciales (nunca subas esto)
+*credentials*.json
+*.key.json
+service_account*.json
+# Dataform/Secrets
+dataform.json
+.env.local
+
+# Proyectos Java/Scala por si te da el ataque
+target/
+*.iml
+
+# Otros
+*.bak
+*.swp

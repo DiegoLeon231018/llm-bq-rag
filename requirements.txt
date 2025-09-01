@@ -1,0 +1,10 @@
+python-dotenv==1.0.1
+pandas==2.2.2
+tqdm==4.66.4
+
+google-cloud-bigquery==3.25.0
+
+langchain==0.2.12
+langchain-openai==0.1.22
+faiss-cpu==1.8.0.post1
+tiktoken==0.7.0
