@@ -1,0 +1,19 @@
+{
+  "session_id": "default",
+  "history": [
+    {
+      "ts": "2025-09-02T17:45:46.875456+00:00",
+      "role": "user",
+      "content": "Para los datos de entel dv360, que campaña tuvo mas revenue en el mes de agosto de 2025",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-02T17:45:53.095999+00:00",
+      "role": "assistant",
+      "content": "No cuento con suficiente contexto para responder con precisión.\n\nFuentes:\n```json\n[\n  {\n    \"campaign_detail\": \"Experiencia_Osiptel 2025_Nivel 3_Masivo\",\n    \"platform_detail\": \"DV360-Youtube-Subasta Views-CPV\"\n  },\n  {\n    \"campaign_detail\": \"Experiencia_Osiptel 2025_Nivel 3_Masivo\",\n    \"platform_detail\": \"DV360-YouTube InStream-Subasta Views-CPV\"\n  },\n  {\n    \"campaign_detail\": \"Experiencia_Osiptel 2025_Nivel 3_Masivo\",\n    \"platform_detail\": \"DV360-YouTube InStream-Subasta Views-CPV\"\n  }\n]\n```",
+      "meta": {}
+    }
+  ],
+  "last_sql": null,
+  "last_meta": null
+}

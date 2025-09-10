@@ -1,0 +1,287 @@
+{
+  "session_id": "entel360",
+  "history": [
+    {
+      "ts": "2025-09-02T17:47:29.991346+00:00",
+      "role": "user",
+      "content": "Para los datos de entel dv360, que campaña tuvo mas revenue en el mes de agosto de 2025",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-02T17:47:35.978178+00:00",
+      "role": "assistant",
+      "content": "No cuento con suficiente contexto para responder con precisión.\n\nFuentes:\n```json\n[\n  {\n    \"campaign_detail\": \"Experiencia_Osiptel 2025_Nivel 3_Masivo\",\n    \"campaign_detail_foco\": \"Experiencia\",\n    \"campaign_detail_nombre\": \"Osiptel 2025\"\n  },\n  {\n    \"campaign_detail\": \"Experiencia_Osiptel 2025_Nivel 3_Masivo\",\n    \"campaign_detail_foco\": \"Experiencia\",\n    \"campaign_detail_nombre\": \"Osiptel 2025\"\n  },\n  {\n    \"campaign_detail\": \"Experiencia_Osiptel 2025_Nivel 3_Masivo\",\n    \"campaign_detail_foco\": \"Experiencia\",\n    \"campaign_detail_nombre\": \"Osiptel 2025\"\n  }\n]\n```",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-02T17:50:07.500602+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con mayor revenue?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-02T17:50:11.759976+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor revenue usd es Señal Power_Señal Power Red_Nivel 1_Masivo con 998.14.\n\nSQL usado:\nSELECT campaign_detail, revenue_usd \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nORDER BY revenue_usd DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-02T17:51:21.775193+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con mayor revenue acumulado?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-02T17:51:26.232500+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor total revenue es Terminales_Plataforma Equipos - 2do Momento_Nivel 1_Masivo con 31,012.42.\n\nSQL usado:\nSELECT campaign_detail, SUM(revenue_usd) AS total_revenue \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nGROUP BY campaign_detail \nORDER BY total_revenue DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-04T14:56:31.887320+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con mayor revenue acumulado?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-04T14:56:39.479927+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor total revenue es Terminales_Plataforma Equipos - 2do Momento_Nivel 1_Masivo con 54,023.60.\n\nSQL usado:\nSELECT campaign_detail, SUM(revenue_usd) AS total_revenue \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nGROUP BY campaign_detail \nORDER BY total_revenue DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-04T15:31:03.822574+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con mayor revenue?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-04T15:31:11.375511+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor revenue usd es Señal Power_Señal Power Red_Nivel 1_Masivo con 998.14.\n\nSQL usado:\nSELECT campaign_detail, revenue_usd \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nORDER BY revenue_usd DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:05:58.202497+00:00",
+      "role": "user",
+      "content": "¿Cuantas campañas se lanzaron el mes de agosto 2025 y cuantas el mes de agosto 2024?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:05:58.679679+00:00",
+      "role": "assistant",
+      "content": "No cuento con suficiente contexto para responder con precisión.",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:06:48.624405+00:00",
+      "role": "user",
+      "content": "¿Cuantas campañas se lanzaron el mes de agosto 2025?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:06:53.155244+00:00",
+      "role": "assistant",
+      "content": "No cuento con suficiente contexto para responder con precisión.\n\nFuentes:\n```json\n[\n  {\n    \"tabla\": \"g_entel_tiktok_campaign\",\n    \"campaign_detail\": \"Beneficios_Bombas (Jueves Entel) 2025 (Convocatoria) (Julio)_Nivel 1_Base\"\n  },\n  {\n    \"tabla\": \"g_entel_tiktok_campaign\",\n    \"campaign_detail\": \"Beneficios_Bombas (Jueves Entel) 2025 (Mayo)_Nivel 1_Base\"\n  },\n  {\n    \"tabla\": \"g_entel_tiktok_campaign\",\n    \"campaign_detail\": \"Beneficios_Bombas (Jueves Entel) 2025 (Mayo)_Nivel 1_Base\"\n  }\n]\n```",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:09:16.789478+00:00",
+      "role": "user",
+      "content": "¿Cual es el total de campañas unicas generadas en agosto 2025?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:09:21.412293+00:00",
+      "role": "assistant",
+      "content": "No cuento con suficiente contexto para responder con precisión.\n\nFuentes:\n```json\n[\n  {\n    \"tabla\": \"g_entel_tiktok_campaign\",\n    \"campaign_detail\": \"Prepago_AON Prepago 2025_Nivel 1_Base\"\n  },\n  {\n    \"tabla\": \"g_entel_tiktok_campaign\",\n    \"campaign_detail\": \"Beneficios_Bombas (Jueves Entel) 2025 (Convocatoria) (Julio)_Nivel 1_Base\"\n  },\n  {\n    \"tabla\": \"g_entel_tiktok_campaign\",\n    \"campaign_detail\": \"Beneficios_Bombas (Jueves Entel) 2025 (Convocatoria) (Julio)_Nivel 1_Base\"\n  }\n]\n```",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:10:26.636448+00:00",
+      "role": "user",
+      "content": "¿& C:\\Users\\diego\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe  c:/Users/diego/OneDrive - Publicis Groupe/Documentos/Python/AI course/llm-bq-rag/rag_qa.py?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:10:27.248620+00:00",
+      "role": "assistant",
+      "content": "No cuento con suficiente contexto para responder con precisión.",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:11:51.536573+00:00",
+      "role": "user",
+      "content": "¿Cual es el total de campañas unicas generadas en agosto 2025?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:13:44.899318+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con menor  revenue?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:13:48.691789+00:00",
+      "role": "assistant",
+      "content": "No cuento con suficiente contexto para responder con precisión.\n\nFuentes:\n```json\n[\n  {\n    \"tabla\": \"g_entel_dv360_campaign\",\n    \"campaign_detail\": \"Prepago_AON Prepago_Nivel 1_Masivo\"\n  },\n  {\n    \"tabla\": \"g_entel_dv360_campaign\",\n    \"campaign_detail\": \"Prepago_AON Prepago_Nivel 1_Masivo\"\n  },\n  {\n    \"tabla\": \"g_entel_dv360_campaign\",\n    \"campaign_detail\": \"Prepago_AON Prepago_Nivel 1_Masivo\"\n  }\n]\n```",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:14:39.788915+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con mayor revenue?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:14:44.818570+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor revenue usd es Señal Power_Señal Power Red_Nivel 1_Masivo con 998.14.\n\nSQL usado:\nSELECT campaign_detail, revenue_usd \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nORDER BY revenue_usd DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:16:24.567843+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con menor revenue acumulado?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:16:29.931513+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor revenue usd es Beneficios_Bombas_Nivel1_Masivo con 0.\n\nSQL usado:\nSELECT campaign_detail, revenue_usd \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nORDER BY revenue_usd ASC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:18:30.360891+00:00",
+      "role": "user",
+      "content": "En el mes de agosto 2025, cual fue la campaña con mayor revenue acumulado?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:18:36.158244+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La taxo_campaign_name con mayor total revenue es None con 8,499.93.\n\nSQL usado:\nSELECT taxo_campaign_name, SUM(cost_usd) AS total_revenue \nFROM `publicis-peru.gold.g_gloria_fbads_campaign_monthly` \nWHERE EXTRACT(YEAR FROM year_month) = 2025 AND EXTRACT(MONTH FROM year_month) = 8 \nGROUP BY taxo_campaign_name \nORDER BY total_revenue DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:19:46.642550+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con mayor revenue acumulado?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:19:52.392506+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor total revenue es Terminales_Plataforma Equipos - 2do Momento_Nivel 1_Masivo con 54,023.60.\n\nSQL usado:\nSELECT campaign_detail, SUM(revenue_usd) AS total_revenue \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nGROUP BY campaign_detail \nORDER BY total_revenue DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:21:32.004602+00:00",
+      "role": "user",
+      "content": "¿Cual es el total de campañas unicas generadas en agosto 2025?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:21:37.693118+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campanias_agosto_2025 con mayor campanias agosto 2025 es 208 con 208.\n\nSQL usado:\nSELECT COUNT(DISTINCT campaign_id) AS campanias_agosto_2025 \nFROM `publicis-peru.gold.g_entel_tiktok_campaign` \nWHERE EXTRACT(YEAR FROM month) = 2025 AND EXTRACT(MONTH FROM month) = 8",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:31:30.096734+00:00",
+      "role": "user",
+      "content": "¿Cual es el total de campañas unicas generadas en agosto 2025?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:31:36.459622+00:00",
+      "role": "assistant",
+      "content": "En agosto de 2025 se generaron 208 campañas únicas en total.\n\nSQL usado:\nSELECT COUNT(DISTINCT campaign_id) AS campanias_agosto_2025 \nFROM `publicis-peru.gold.g_entel_tiktok_campaign` \nWHERE EXTRACT(YEAR FROM month) = 2025 AND EXTRACT(MONTH FROM month) = 8",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:32:29.288812+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv360_campaign y responde lo siguiente: En el mes de agosto 2025, cual fue la campaña con mayor revenue acumulado?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-05T14:32:35.297948+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La campaign_detail con mayor total revenue es Terminales_Plataforma Equipos - 2do Momento_Nivel 1_Masivo con 54,023.60.\n\nSQL usado:\nSELECT campaign_detail, SUM(revenue_usd) AS total_revenue \nFROM `publicis-peru.gold.g_entel_dv360_campaign` \nWHERE EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 \nGROUP BY campaign_detail \nORDER BY total_revenue DESC \nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:12:29.382102+00:00",
+      "role": "user",
+      "content": "Usa g_entel_tiktok_ad y dime la diferencia en clicks del año actual con el año pasado para el mes de agosto",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:12:41.113518+00:00",
+      "role": "assistant",
+      "content": "Respuesta: La clicks_agosto_2025 con mayor clicks agosto 2024 es 424097 con 3,571,448.\n\nSQL usado:\nSELECT \n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) AS clicks_agosto_2025,\n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2024 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) AS clicks_agosto_2024,\n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) - \n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2024 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) AS diferencia_clicks\nFROM `publicis-peru.gold.g_entel_tiktok_ad` \nWHERE (EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8) OR \n      (EXTRACT(YEAR FROM date) = 2024 AND EXTRACT(MONTH FROM date) = 8)",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:22:30.937077+00:00",
+      "role": "user",
+      "content": "Usa g_entel_tiktok_ad y dime la diferencia en clicks del año actual con el año pasado para el mes de agosto",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:22:38.901664+00:00",
+      "role": "assistant",
+      "content": "En agosto de 2025 se obtuvieron 424,097 clicks; en agosto de 2024, 3,571,448. La diferencia es -3,147,351 (-88.13%).\n\nSQL usado:\nSELECT \n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) AS clicks_agosto_2025,\n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2024 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) AS clicks_agosto_2024,\n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) - \n  SUM(CASE WHEN EXTRACT(YEAR FROM date) = 2024 AND EXTRACT(MONTH FROM date) = 8 THEN clicks ELSE 0 END) AS diferencia_clicks\nFROM `publicis-peru.gold.g_entel_tiktok_ad` \nWHERE (EXTRACT(YEAR FROM date) = 2025 AND EXTRACT(MONTH FROM date) = 8) OR \n      (EXTRACT(YEAR FROM date) = 2024 AND EXTRACT(MONTH FROM date) = 8)",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:40:19.063187+00:00",
+      "role": "user",
+      "content": "Usa g_entel_tiktok_ad y dime ¿Qué campaña me genera mejor resultado en cuanto a clics para este mes?",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:43:10.204044+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv_360_campaign y dime Qué campaña me genera mejor resultado en cuanto a clics para este mes",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:53:43.143497+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv_360_campaign y dime Qué campaña me genera mejor resultado en cuanto a clics para este mes",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:53:48.939240+00:00",
+      "role": "assistant",
+      "content": "la campaign_name con mayor total clicks fue CN~OFERTAS-PLANES_MK~PE_AN~ENTEL_PR~IMAGEN_YR~25_OB~AWA_PB~DV360 con 133,588.\n\nSQL usado:\nSELECT \n  campaign_name,\n  SUM(clicks) AS total_clicks\nFROM `publicis-peru.gold.g_entel_dv360_campaign`\nWHERE date BETWEEN DATE_TRUNC(CURRENT_DATE('America/Lima'), MONTH) AND CURRENT_DATE('America/Lima')\nGROUP BY campaign_name\nORDER BY total_clicks DESC\nLIMIT 1",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:54:49.917916+00:00",
+      "role": "user",
+      "content": "Usa la tabla g_entel_dv_360_campaign y dime Qué campaña me genera mejor resultado en cuanto a clics para agosto 2025",
+      "meta": {}
+    },
+    {
+      "ts": "2025-09-10T16:54:56.141007+00:00",
+      "role": "assistant",
+      "content": "En agosto de 2025 la campaign_name con mayor total clicks fue CN~AON-EQUIPOS_MK~PE_AN~ENTEL_PR~PERSONAS_YR~25_OB~RPDC_PB~DV360 con 1,325,639.\n\nSQL usado:\nSELECT \n  campaign_name,\n  SUM(clicks) AS total_clicks\nFROM `publicis-peru.gold.g_entel_dv360_campaign`\nWHERE date BETWEEN DATE_TRUNC(DATE '2025-08-01', MONTH) AND DATE '2025-08-31'\nGROUP BY campaign_name\nORDER BY total_clicks DESC\nLIMIT 1",
+      "meta": {}
+    }
+  ],
+  "last_sql": "SELECT \n  campaign_name,\n  SUM(clicks) AS total_clicks\nFROM `publicis-peru.gold.g_entel_dv360_campaign`\nWHERE date BETWEEN DATE_TRUNC(DATE '2025-08-01', MONTH) AND DATE '2025-08-31'\nGROUP BY campaign_name\nORDER BY total_clicks DESC\nLIMIT 1",
+  "last_meta": {
+    "chosen_table": "publicis-peru.gold.g_entel_dv360_campaign",
+    "tables": [
+      "publicis-peru.gold.g_entel_dv360_campaign",
+      "publicis-peru.gold.g_entel_dv360_campaign_grouped",
+      "publicis-peru.gold.g_entel_fbads_ad"
+    ],
+    "rows_returned": 1,
+    "duration_ms": 2771,
+    "error": null
+  }
+}
